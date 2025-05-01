@@ -195,3 +195,28 @@ header {
   height: auto;
   object-fit: cover;
 }
+.info-card .card-details {
+  margin-bottom: 1rem;
+}
+/* ----- Quote Section ----- */
+.quote {
+  background: var(--secondary-text-color);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote-text {
+  width: 80%;
+  margin: 0 auto;
+}
+.quote-text .quote-details {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+.quote-text .quote-author {
+  text-align: right;
+  font-size: 2rem;
+  margin-right: 50px;
+}
