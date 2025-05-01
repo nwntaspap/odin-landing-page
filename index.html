@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -23,15 +28,24 @@
             <img src="Assets/logo.png" alt="A symmetric logo for our site" />
           </div>
           <ul class="links-container">
-            <li><a href="#">Home</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li>
+              <i class="material-icons">home</i>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <i class="material-icons">mail</i>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <i class="material-icons">info</i>
+              <a href="#">About</a>
+            </li>
           </ul>
         </nav>
         <!------- Hero Section ------->
         <section class="hero">
           <div class="hero-text">
-            <h1 class="hero-title">Explore new ideas from here</h1>
+            <h1 class="hero-title">Explore new places, meet new horizons</h1>
             <p class="hero-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Provident dolor mollitia libero ad. Fugit magni ad nesciunt
@@ -48,5 +62,60 @@
         </section>
       </div>
     </header>
+    <!------- Main Content ------->
+    <main>
+      <!------- Random Info Section ------->
+      <section class="info">
+        <div class="section-container">
+          <h3 class="info-header">See the greatest landscapes!</h3>
+          <div class="card-container">
+            <article class="info-card">
+              <img
+                class="card-img"
+                src="Assets/grass-field.jpg"
+                alt="The beautiful landscape of Devon on a warm summer day."
+              />
+              <p class="card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, repudiandae?
+              </p>
+            </article>
+            <article class="info-card">
+              <img
+                class="card-img"
+                src="Assets/lake-forest.jpg"
+                alt="Sunrise at Schwabacher's Landing in Jackson, Wyoming."
+              />
+              <p class="card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, repudiandae?
+              </p>
+            </article>
+            <article class="info-card">
+              <img
+                class="card-img"
+                src="Assets/sea-beauty.jpg"
+                alt="The blue lake of Pragser Wildsee, Italy on a summer day."
+              />
+              <p class="card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, repudiandae?
+              </p>
+            </article>
+            <article class="info-card">
+              <img
+                class="card-img"
+                src="Assets/lake-mountain.jpg"
+                alt="Calm body of water surrounded with mountain and trees"
+              />
+              <p class="card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, repudiandae?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -22,10 +22,15 @@ body {
   max-width: 80%;
   width: 100%;
   margin: 0 auto;
-  /* border: 2px solid red; */
+}
+.section-container {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
 }
 /* ----- Header Section ----- */
 header {
+  min-height: 80vh;
   background: var(--main-color);
   padding: 1rem;
   display: flex;
@@ -56,9 +61,16 @@ header {
   list-style-type: none;
 }
 .links-container li {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
   background-color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+.links-container li i {
+  color: #333;
   transition: all 0.3s;
 }
 .links-container li a {
@@ -72,7 +84,8 @@ header {
 .links-container li:hover {
   background-color: #9c9c9c;
 }
-.links-container li:hover a {
+.links-container li:hover a,
+.links-container li:hover i {
   color: #ffffff;
 }
 
@@ -92,8 +105,8 @@ header {
 }
 .hero-text .hero-title {
   font-size: 3rem;
+  font-weight: 900;
   color: var(--main-text-color);
-  font-weight: bold;
 }
 .hero-text .hero-description {
   font-size: 1.2rem;
@@ -123,10 +136,62 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hero .hero-img img {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+.hero .hero-img img:hover {
+  transform: scale(1.1);
+}
+/* ----- Random Info Section ----- */
+.info {
+  background: var(--main-text-color);
+  min-height: 80vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.info .info-header {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.card-container {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.info-card {
+  max-height: 300px;
+  flex: 1 1 20%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 1rem;
+  /* border: 4px solid #333; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+.info-card .card-img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
